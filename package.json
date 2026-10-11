@@ -1,0 +1,27 @@
+{
+  "name": "ironwalk",
+  "private": true,
+  "version": "0.8.0",
+  "description": "Side-view mech combat game built with three.js, React and Framer Motion.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sim": "esbuild scripts/sim/entry.js --bundle --format=esm --platform=node --alias:three=./scripts/sim/mock-three.js --alias:react=./scripts/sim/react-stub.js --outfile=scripts/sim/.bundle.mjs --log-level=warning && node scripts/sim/run.mjs"
+  },
+  "dependencies": {
+    "@fontsource/jetbrains-mono": "^5.0.20",
+    "@fontsource/saira": "^5.0.20",
+    "@fontsource/saira-condensed": "^5.0.13",
+    "framer-motion": "^11.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "0.149.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0",
+    "esbuild": "^0.21.5"
+  }
+}
